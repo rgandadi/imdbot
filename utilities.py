@@ -82,7 +82,7 @@ def removeFolder(folderName=None):
 	try:
 		for file in files:
 			os.remove(file)
-		os.removedirs(folderToRemove)
+		os.rmdir(folderToRemove)
 	except:
 		print ("Unable to remove "+folderToRemove)
 		
