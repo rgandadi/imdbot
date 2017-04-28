@@ -1,14 +1,17 @@
 http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/
-
-
-virtualenv -p python3.6 imdb --no-site-packages
-source imdb/bin/activate
-
-pip install requests
-pip install panda
+https://cloud.google.com/python/getting-started/hello-world#deploy_and_run_hello_world_on_app_engine
 
 pip freeze > requirements.txt
-deactivate
-rm -rf 
-
 pip install -r requirements.txt
+
+—
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+
+python main.py
+
+deactivate
+
+
+
